@@ -15,7 +15,7 @@ public class GamePanel extends JPanel {
     private Timer timer;
     private int foodX;
     private int foodY;
-    private int score = 0;
+    private int score;
     private boolean isDie;
 
     public void init() {
@@ -31,6 +31,8 @@ public class GamePanel extends JPanel {
         snakeY[2] = 10*25;
 
         length = 3;
+
+        score = 0;
 
         isDie = false;
 
